@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero section styles */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            /* Adjust the height as needed */
+            background-image: url('coverimg.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-with-text {
+            background-color: #000;
+            color: #fff;
+            height: 40px;
+            display: flex;
+            font-size: 10px;
+            justify-content: space-between;
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 2px;
+        }
+
+        .book-now-btn {
+            background-color: #186dff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 8px;
+            text-align: center;
+            margin: 10px;
+            justify-content: center;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            /* Adding transition for hover effect */
+        }
+
+        .book-now-btn:hover {
+            background-color: #1356c9;
+            /* Changing background color on hover */
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            /* Allow vertical resizing */
+            min-height: 100px;
+            /* Set minimum height */
+        }
+
+        .form-group input[type="submit"] {
+            width: 100%;
+            background-color: #186dff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #1356c9;
+        }
+
+        /* Media query for responsiveness */
+        /* Media query for responsiveness */
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 10px;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            margin-bottom: 0px;
+            font-size: 1em;
+        }
+
+        /* Media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .view-all-btn {
+            display: block;
+            width: 27%;
+            height: 39%;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #186dff;
+            color: #fff;
+            border: none;
+            border-radius: 8px 8px 8px 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 40;
+        }
+
+        .view-all-btn:hover {
+            background-color: #1356c9;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .images img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .landscape {
+
+            width: 98%;
+            
+        }
+
+        .potrait{
+
+            width: 10%;
+            display: flex;;
+
+}
+
+        .galleryDisplay {
+
+            margin: 0px;
+        }
+
+
+        /* Rest of the styles are similar to previous examples */
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Section with text -->
+    <section class="section-with-text">
+        <h2 style="width: fit-content; margin-left: 20px;">Bokehcious Photography</h2>
+        <div style="align-items: center; margin-top: 13px;"><a href="booking_page.html" class="book-now-btn">Book
+                Now</a></div>
+
+    </section>
+
+
+
+
+
+    <!-- Hero section -->
+    <section class="hero">
+
+    </section>
+
+    <section class="galleryDisplay">
+
+        <div style="align-items: center;">
+            <h3 style="text-align: center;">Gallery</h3>
+        </div>
+
+
+        <div>
+            <img style="margin: 4px;" class="landscape"
+                src="https://scontent.fpnq13-4.fna.fbcdn.net/v/t1.6435-9/73390882_580789446001632_8481267246486781952_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=4dc865&_nc_ohc=NjuLw8E8QJcAX-jBh_E&_nc_ht=scontent.fpnq13-4.fna&oh=00_AfADVH8Zde5bqJJQCa6r-NZzZX8WcQtxPtS38AtRLiF3FA&oe=65C0957A"
+                alt="">
+        </div>
+        
+        <div>
+            <img style="margin: 4px;" class="landscape"
+                src="https://scontent.fpnq13-3.fna.fbcdn.net/v/t1.6435-9/139465731_884892585591315_6554218652036888939_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=300f58&_nc_ohc=6z5ceVqNGjoAX_kbEFk&_nc_ht=scontent.fpnq13-3.fna&oh=00_AfD9_C54XGC6YiHKGSnDPvokJQVZWYWnj6abWhT9kcyuUQ&oe=65C08EF9"
+                alt="">
+        </div>
+
+        <div class="potrait">
+
+            <img style="width: 150px; margin: 10px;" src="https://scontent.fpnq13-4.fna.fbcdn.net/v/t1.6435-9/82156883_625927501487826_4801548187368161280_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=4dc865&_nc_ohc=NRAQTUIvyC0AX-3syq7&_nc_ht=scontent.fpnq13-4.fna&oh=00_AfDKes5BVosutWYjRQl1oWFRyPL4y97qOhWje9CbtfTE9w&oe=65C08F52" alt="">
+            <img style="width: 150px; margin: 5px;" src="https://scontent.fpnq13-3.fna.fbcdn.net/v/t1.6435-9/51066378_411010029646242_7665039339293769728_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=4dc865&_nc_ohc=GyoLK4BiyCwAX_6ngLM&_nc_ht=scontent.fpnq13-3.fna&oh=00_AfDAmD21sopTuCR25hralw_2x8zpcm5x5kinDORGxEO05A&oe=65C0871C" alt="">
+        </div>
+
+        <div>
+            <img style="margin: 4px; height: 200px;" class="landscape"
+                src="https://scontent.fpnq13-4.fna.fbcdn.net/v/t1.6435-9/139360997_884895265591047_2540596144817535069_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=YEjxFVf6VeIAX_4PVw0&_nc_ht=scontent.fpnq13-4.fna&oh=00_AfCPXh8sOrbc4D7AeG3ljkiSX2-RvjKJ02zoovz7HJZ8Ng&oe=65C0A5BC"
+                alt="">
+        </div>
+
+        
+
+
+
+
+
+
+    </section>
+
+    <section>
+        <div class="gallery">
+
+            <div class="card">
+                <img src="https://scontent.fpnq13-4.fna.fbcdn.net/v/t1.6435-9/50996733_411010399646205_7764889108358365184_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=4dc865&_nc_ohc=L7G-f3ch2W4AX9LBq0W&_nc_ht=scontent.fpnq13-4.fna&oh=00_AfD9ydWP8zJueMiIhTlkfURhaOua4bBM6KVt2PsmoMcDng&oe=65C0A657"
+                    alt="Couple 1">
+                <div class="card-content">
+                    <h3>Saurabh &Aastha</h3>
+                    <a href="view_all.html" class="view-all-btn" target="_blank">View All</a>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://scontent.fpnq13-4.fna.fbcdn.net/v/t1.6435-9/61749048_474071683340076_2389353610287775744_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=4dc865&_nc_ohc=-RCysMMypzAAX_pZPWf&_nc_ht=scontent.fpnq13-4.fna&oh=00_AfB-8FMkzz_rvids4ulSEr9hLaEAXxHeRRLRKT_dbTszsQ&oe=65C07E35"
+                    alt="Couple 2">
+                <div class="card-content">
+                    <h3>Mike & Sarah</h3>
+                    <a href="view_all.html" class="view-all-btn" target="_blank">View All</a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+                <img src="https://scontent.fpnq13-2.fna.fbcdn.net/v/t1.6435-9/53034553_424468291633749_1628178563830120448_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=4dc865&_nc_ohc=B3IrQwvQCYAAX9nPW2n&_nc_ht=scontent.fpnq13-2.fna&oh=00_AfBin2GDPjgVBXSCnQ2Nfg1rFS2GvdE-kvT_NegtHGWDxA&oe=65C0868B"
+                    alt="Couple 2">
+                <div class="card-content">
+                    <h3>Mike & Sarah</h3>
+                    <a href="view_all.html" class="view-all-btn" target="_blank">View All</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <img src="https://scontent.fpnq13-2.fna.fbcdn.net/v/t31.18172-8/28239023_211845612896019_7182628572612543901_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=4dc865&_nc_ohc=lfLyRbCwPCMAX9v7u3t&_nc_ht=scontent.fpnq13-2.fna&oh=00_AfDLqQSklwlANA4zpuNwTVKFILlbhursXBCXR1uwqBjxRA&oe=65C08D0E"
+                    alt="Couple 2">
+                <div class="card-content">
+                    <h3>Mike & Sarah</h3>
+                    <a href="view_all.html" class="view-all-btn" target="_blank">View All</a>
+
+                </div>
+
+            </div>
+    </section>
+
+
+
+    <section class="Form">
+
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message here"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <!-- Rest of the content -->
+
+        <footer>
+            <p>Contact us for your pre-wedding photography needs!</p>
+        </footer>
+</body>
+
+</html>
